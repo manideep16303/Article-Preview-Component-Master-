@@ -1,0 +1,182 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: grey;
+}
+.main {
+  background-color: white;
+  border-radius: 1rem;
+  position: absolute;
+  width: 55.3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading{
+  color: rgb(53, 53, 53);
+}
+.p-info {
+  color: rgb(71, 71, 71);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.drawers {
+  float: left;
+  width: 22.3rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.info {
+  margin-left: 22rem;
+  padding: 2.5rem;
+}
+.profile {
+  padding-top: 10px;
+}
+.profile-heading {
+  padding: 0.5rem 0 0.15rem 0;
+}
+.profile-img {
+  border-radius: 50%;
+  float: left;
+  width: 55px;
+  padding-right: 1rem;
+}
+.dob{
+  color: rgb(121, 121, 121);
+}
+.share-icon {
+  border-radius: 50%;
+  margin-top: -1.6rem;
+  margin-right: 1.5rem;
+  padding: 10px;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.share-icon:hover {
+  background-color: hsl(210, 46%, 95%);
+  transition: 0.8s;
+}
+.popup {
+  visibility: hidden;
+  margin-left: 19.5rem;
+  margin-top: -5.2rem;
+  float: right;
+  width: 180px;
+  text-align: center;
+  background-color: hsl(217, 19%, 35%);
+  text-align: left;
+  border-radius: 8px;
+  padding: 8px;
+  position: absolute;
+}
+
+/* Popup arrow */
+.popup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.share {
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  color: #d3d3d3;
+  font-size: 12px;
+  letter-spacing: 4px;
+  padding: 8px 8px 8px 15px;
+}
+.social {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    width: 26rem;
+    height: 47.5rem;
+  }
+  .info {
+    margin-left: 0%;
+  }
+  .profile {
+    z-index: -1;
+    position: relative;
+  }
+  .drawers {
+    width: 26rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0%;
+    padding-bottom: 1.2rem;
+  }
+  .p-info {
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+  }
+  .share-icon {
+    margin-right: 0.5rem;
+    margin-top: -2.5rem;
+    width: 15px;
+    height: 15px;
+  }
+
+  .profile {
+    padding-top: 0%;
+  }
+  .popup {
+    visibility: hidden;
+    padding: 0%;
+    padding-top: 17px;
+    border-radius: 0%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-right: -2.5rem;
+    margin-top: -3.4rem;
+    width: 26rem;
+    height: 4rem;
+    z-index: -1;
+    position: relative;
+  }
+  .share {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 12px 15px 8px 42px;
+  }
+  .social {
+    padding: 10px;
+    padding-top: 11px;
+    width: 25px;
+  }
+  .popup::after {
+    display: none;
+  }
+}
